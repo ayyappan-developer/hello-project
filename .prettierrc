@@ -1,4 +1,11 @@
 {
   "singleQuote": true,
-  "trailingComma": "all"
+  "braceStyle": "1tbs", 
+  "printWidth": 120,  
+  "singleAttributePerLine": false ,
+  "bracketSameLine": true,
+  "tabWidth": 2,
+  "semi": true,
+  "arrowParens": "avoid",
+  "trailingComma": "none"
 }
