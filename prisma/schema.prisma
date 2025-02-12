@@ -22,6 +22,7 @@ model category {
   id        Int    @map("c_id") @default(autoincrement()) @id
   title     String @map("c_title")  @db.VarChar(150)
   detail    String? @map("c_detail")  @db.VarChar(200)
+  image    String? @map("c_image")  @db.VarChar(200)
   createdOn DateTime? @default(now()) @map("c_created_on") @db.Timestamp(6)
   updatedOn DateTime? @default(now()) @map("c_updated_on") @db.Timestamp(6)
 }

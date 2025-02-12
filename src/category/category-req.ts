@@ -1,16 +1,16 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNotEmpty } from "class-validator";
+import { IsEmail, IsNotEmpty } from "class-validator";
 
 export class CategoryReq{
-    
+
    @ApiProperty()
-   @IsNotEmpty()
+   @IsNotEmpty({message: 'title is required'})
     title:string;
 
     @ApiProperty()
-   // @IsNotEmpty({message: 'Email is required'})
-    @IsNotEmpty()
     detail:string;
 
+    @ApiProperty()
+    image:string;
 
 }
